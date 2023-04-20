@@ -4,12 +4,12 @@
 BUILD_ROOT=$PWD
 BUILD_INTERACTIVE=$1
 
-if [ -f /.dockerenv ]; then
-	BUILD_CONTAINER="YES"
-else
-	BUILD_CONTAINER="NO"
-fi
-
+#if [ -f /.dockerenv ]; then
+#	BUILD_CONTAINER="YES"
+#else
+#	BUILD_CONTAINER="NO"
+#fi
+BUILD_CONTAINER="NO"
 
 echo "[Pre-build]  dependency installer script running..."
 echo "[Pre-build]  build root directory: $BUILD_ROOT"
